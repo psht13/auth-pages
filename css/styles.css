@@ -1,0 +1,194 @@
+body {
+  font-family: "Lato", sans-serif;
+  color: #e0dfdf;
+  font-size: 16px;
+  max-height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input {
+  font-family: inherit;
+}
+
+.viewport {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(27, 27, 27, 0.6),
+      rgba(27, 27, 27, 0.6)
+    ),
+    url(../img/reg-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999999;
+  width: 100%;
+  height: 100%;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  padding: 24px 16px 24px 16px;
+  background-color: transparent;
+  border-radius: 4px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-header {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.form-text {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.form-field-wrapper {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.form-input-wrapper {
+  position: relative;
+}
+
+.input-icon {
+  fill: #e0dfdf;
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-hidden-icon {
+  fill: #e0dfdf;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.password-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: transparent;
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+
+  transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.password-btn:hover .input-hidden-icon {
+  fill: #ffffff;
+}
+
+.eye.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.closed-eye.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.form-input {
+  font-size: 16px;
+  color: #e0dfdf;
+  border: 1px solid rgba(214, 214, 214, 0.4);
+  border-radius: 8px;
+  background-color: rgba(27, 27, 27, 0.3);
+  padding-left: 38px;
+  padding-right: 38px;
+  outline: transparent;
+  width: 100%;
+  height: 48px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input::placeholder {
+  color: #e0dfdf;
+  font-size: 12px;
+}
+
+.form-input:focus {
+  border-color: #ffffff;
+}
+
+.form-input:focus + .input-icon {
+  fill: #ffffff;
+}
+
+.input-list {
+  margin-bottom: 12px;
+}
+
+.btn-wrapper {
+  display: flex;
+  gap: 8px;
+}
+
+.form-submit-btn {
+  background-color: transparent;
+  border-radius: 8px;
+  background-color: rgba(27, 27, 27, 0.3);
+  border: 1px solid rgba(214, 214, 214, 0.4);
+  font-size: 16px;
+  padding: 8px 16px;
+  height: 40px;
+  font-weight: bold;
+  min-width: 155px;
+  color: #e0dfdf;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: center;
+}
+
+.form-submit-btn:hover,
+.form-submit-btn:focus {
+  border-color: #ffffff;
+}

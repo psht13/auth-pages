@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Реєстрація</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha516-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <main class="viewport">
+      <div class="backdrop">
+        <div class="modal">
+          <form class="form">
+            <h1 class="form-header">Авторизація</h1>
+            <p class="form-text">Увійдіть до свого акаунту</p>
+            <div class="input-list">
+              <div class="form-field-wrapper">
+                <div class="form-input-wrapper">
+                  <input
+                    type="text"
+                    class="form-input"
+                    name="login"
+                    id="login"
+                    placeholder="Логін"
+                    required
+                  />
+                  <svg
+                    class="input-icon"
+                    width="16"
+                    height="16"
+                    aria-label="User icon"
+                  >
+                    <use href="./img/icons.svg#icon-user"></use>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="form-field-wrapper">
+                <div class="form-input-wrapper">
+                  <input
+                    type="password"
+                    class="form-input"
+                    id="pwd-input1"
+                    name="password"
+                    id="password"
+                    placeholder="Пароль"
+                    required
+                  />
+                  <svg
+                    class="input-icon"
+                    width="16"
+                    height="16"
+                    aria-label="Lock icon"
+                  >
+                    <use href="./img/icons.svg#icon-lock"></use>
+                  </svg>
+
+                  <button
+                    class="password-btn eye visible"
+                    id="button11"
+                    type="button"
+                  >
+                    <svg
+                      class="input-hidden-icon"
+                      width="16"
+                      height="16"
+                      aria-label="Eye icon"
+                    >
+                      <use href="./img/icons.svg#icon-eye"></use>
+                    </svg>
+                  </button>
+
+                  <button
+                    class="password-btn closed-eye"
+                    id="button12"
+                    type="button"
+                  >
+                    <svg
+                      class="input-hidden-icon"
+                      width="16"
+                      height="16"
+                      aria-label="Closed eye icon"
+                    >
+                      <use href="./img/icons.svg#icon-closed-eye"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="btn-wrapper">
+              <button class="form-submit-btn" type="submit">Увійти</button>
+              <a href="./registration.html" class="form-submit-btn"
+                >Реєстрація</a
+              >
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <script src="./js/script.js" type="module"></script>
+  </body>
+</html>
